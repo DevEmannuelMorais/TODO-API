@@ -6,7 +6,7 @@ const router = Router();
 router.get("/", listTodos);
 router.post("/", addTodo);
 router.put("/:id", editTodoTitle);
-router.patch("/:id", toggleTodoDone);
+router.patch("/:id/done", toggleTodoDone);
 router.delete("/:id", removeTodo);
 
 export default router;
